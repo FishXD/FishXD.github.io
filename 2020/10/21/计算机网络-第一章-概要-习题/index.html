@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机网络-第一章-概要-习题 | SanLing!</title><meta name="author" content="SanLing"><meta name="copyright" content="SanLing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="1-01计算机网络可以向用户提供哪些服务？  计算机网络向用户提供的最重要的功能有两个，连通性和共享。   1-02试简述分组交换的要点。   采用存储转发技术。把一个报文(要发送的整块数据)划分成几个分组(等长数据段+首部)后再进行传送。 使用路由器进行转发分组(分组交换)。 路由器先暂存，检查分组首部，查找转发表，转发。 在传送数据之前不必先占用一条端到端的链路的通信资源。 实质是采用了在数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络-第一章-概要-习题">
+<meta property="og:url" content="http://example.com/2020/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%A6%81-%E4%B9%A0%E9%A2%98/index.html">
+<meta property="og:site_name" content="SanLing!">
+<meta property="og:description" content="1-01计算机网络可以向用户提供哪些服务？  计算机网络向用户提供的最重要的功能有两个，连通性和共享。   1-02试简述分组交换的要点。   采用存储转发技术。把一个报文(要发送的整块数据)划分成几个分组(等长数据段+首部)后再进行传送。 使用路由器进行转发分组(分组交换)。 路由器先暂存，检查分组首部，查找转发表，转发。 在传送数据之前不必先占用一条端到端的链路的通信资源。 实质是采用了在数据">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/sanling-compress.png">
+<meta property="article:published_time" content="2020-10-21T12:06:03.000Z">
+<meta property="article:modified_time" content="2020-10-23T14:38:46.550Z">
+<meta property="article:author" content="SanLing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/sanling-compress.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2020/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%A6%81-%E4%B9%A0%E9%A2%98/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-10-23 22:38:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/sanling-compress.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">4</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 读书清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/computerBooks"><i class="fa-fw fas fa-book"></i><span> 专业书</span></a></li><li><a class="site-page" href="/categories/othersBooks"><i class="fa-fw fas fa-bookmark"></i><span> 其他书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg"></div><header class="post-bg" id="page-header" style="background-image: url(https://s1.ax1x.com/2020/10/23/BEdXEn.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">SanLing!</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 读书清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/computerBooks"><i class="fa-fw fas fa-book"></i><span> 专业书</span></a></li><li><a class="site-page" href="/categories/othersBooks"><i class="fa-fw fas fa-bookmark"></i><span> 其他书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">计算机网络-第一章-概要-习题</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-21T12:06:03.000Z" title="发表于 2020-10-21 20:06:03">2020-10-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-23T14:38:46.550Z" title="更新于 2020-10-23 22:38:46">2020-10-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/computerBooks/">computerBooks</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>1-01计算机网络可以向用户提供哪些服务？</p>
+<blockquote>
+<p>计算机网络向用户提供的最重要的功能有两个，连通性和共享。</p>
+</blockquote>
+<hr>
+<p>1-02试简述分组交换的要点。</p>
+<blockquote>
+<ol>
+<li>采用存储转发技术。把一个报文(要发送的整块数据)划分成几个分组(等长数据段+首部)后再进行传送。</li>
+<li>使用路由器进行转发分组(分组交换)。</li>
+<li>路由器先暂存，检查分组首部，查找转发表，转发。</li>
+<li>在传送数据之前不必先占用一条端到端的链路的通信资源。</li>
+<li>实质是采用了在数据通信的过程中断续(或动态)分配传输带宽的策略。</li>
+<li>为保证分组交换网的可靠性，互联网核心部分常采用网状拓扑结构。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>分组交换实质上是在“存储——转发”基础上发展起来的。它兼有电路交换和报文交换的优点。分组交换在线路上采用动态复用技术传送按一定长度分割为许多小段的数据——分组。每个分组标识后，在一条物理线路上采用动态复用的技术，同时传送多个数据分组。把  来自用户发端的数据暂存在交换机的存储器内，接着在网内转发。到达接收端，再去掉分组头将各数据字段按顺序重新装配成完整的报文。分组交换比电路交换的电路利用率高，比报文交换的传输时延小，交互性好。</p>
+</blockquote>
+<hr>
+<p>1-03试从多个方面比较电路交换、报文交换和分组交换的主要优缺点。</p>
+<blockquote>
+<p>（1）电路交换电路交换就是计算机终端之间通信时，一方发起呼叫，独占一条物理线路。当交换机完成接续，对方收到发起端的信号，双方即可进行通信。在整个通信过程中双方一直占用该电路。它的特点是实时性强，时延小，交换设备成本较低。但同时也带来线路利用率低，电路接续时间长，通信效率低，不同类型终端用户之间不能通信等缺点。电路交换比较适用于信息量大、长报文，经常使用的固定用户之间的通信。</p>
+<p>（2）报文交换将用户的报文存储在交换机的存储器中。当所需要的输出电路空闲时，再将  该报文发向接收交换机或终端，它以“存储——转发”方式在网内传输数据。报文交换的优  点是中继电路利用率高，可以多个用户同时在一条线路上传送，可实现不同速率、不同规程  的终端间互通。但它的缺点也是显而易见的。以报文为单位进行存储转发，网络传输时延大  且占用大量的交换机内存和外存，不能满足对实时性要求高的用户。报文交换适用于传输的 报文较短、实时性要求较低的网络用户之间的通信，如公用电报网。</p>
+<p>（3）分组交换分组交换实质上是在“存储——转发”基础上发展起来的。它兼有电路交换和报文交换的优点。分组交换在线路上采用动态复用技术传送按一定长度分割为许多小段的数据——分组。每个分组标识后，在一条物理线路上采用动态复用的技术，同时传送多个数据分组。把来自用户发端的数据暂存在交换机的存储器内，接着在网内转发。到达接收端，再去掉分组头将各数据字段按顺序重新装配成完整的报文。分组交换比电路交换的电路利用 率高，比报文交换的传输时延小，交互性好。</p>
+</blockquote>
+<hr>
+<p>1-04为什么说互联网是自印刷术以来人类在存储和交换信息领域中的最大变革？</p>
+<p>1-05互联网基础结构的发展大致分为哪几个阶段？请指出这几个阶段最主要的特点。</p>
+<p>1-06简述互联网标准制定的几个阶段。</p>
+<p>1-07小写和大写开头的英文名字internet和Internet在意思上有何重要区别？</p>
+<blockquote>
+<p>以小写字母i开始的<strong>internet (互连网)是一个通用名词，它泛指由多个计算机网络互连而成的计算机网络</strong>。在这些网络之间的通信协议(即通信规则)可以任意选择，不定非要使用TCP/IP协议。</p>
+<p>以大写字母I开始的<strong>Internet (互联网，或因特网)则是一个专用名词，它指当前全球最大的、开放的、由众多网络相互连接而成的特定互连网，它采用TCP/IP协议族作为通信的规则</strong>。可见，任意把几个计算机网络互连起来(不管采用什么协议)，并能够相互通信， 这样构成的是一个互连网(internet),而不是互联网(Internet)。</p>
+</blockquote>
+<hr>
+<p>1-08计算机网络都有哪些类别？各种类别的网络都有哪些特点？</p>
+<blockquote>
+<ol>
+<li>按作用范围的不同，计算机网络分为广域网WAN、城域网MAN、局域网LAN和个人区域网PAN。</li>
+<li>按照网络的使用者进行分类，(1)<strong>公用网</strong>(public network)(2)<strong>专用网</strong>(private network)</li>
+<li>用来把用户接入到互联网的网络，这种网络就是<strong>接入网AN</strong>(Ace Network), 它又称为本地接入网或居民接入网，这是类比较特殊的计算机网络。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>1、按网络覆盖的地理范围分类： </p>
+<p>（1）、局域网：局域网是计算机硬件在比较小的范围内通信线路组成的网络，一般限定在较 小的区域内，通常采用有线的方式连接起来。</p>
+<p>（2）、城域网：城域网规模局限在一座城市的范围内，覆盖的范围从几十公里至数百公里， 城域网基本上是局域网的延伸，通常使用与局域网相似的技术，但是在传输介质和布线结构 方面牵涉范围比较广。</p>
+<p>（3）、广域网：覆盖的地理范围非常广，又称远程网，在采用的技术、应用范围和协议标准 方面有所不同。</p>
+<p>2、按传榆介质分类： </p>
+<p>（1）、有线网：采用同轴电缆、双绞线，甚至利用又线电视电视电缆来连接的计算机网络， 又线网通过”载波”空间进行传输信息，需要用导线来实现。</p>
+<p>（2）、无线网：用空气做传输介质，用电磁波作为载体来传播数据。无线网包括：无线电话、 语音广播网、无线电视网、微波通信网、卫星通信网。</p>
+<p>3、按网络的拓扑结构分类： </p>
+<p>（1）、星型网络：各站点通过点到点的链路与中心相连，特点是很容易在网络中增加新的站 点，数据的安全性和优先级容易控制，易实现网络监控，但一旦中心节点有故障会引起整个 网络瘫痪。</p>
+<p>（2）、总线型网络：网络中所有的站点共享一条数据通道，总线型网络安装简单方便，需要 铺设的电线最短，成本低，某个站点的故障一般不会影响整个网络，但介质的故障会导致网 络瘫痪，总线网安全性低，监控比较困难，增加新站点也不如星型网络容易。</p>
+<p>（3）、树型网络：是上述两种网的综合。</p>
+<p>（4）、环型网络：环型网容易安装和监控，但容量有限，网络建成后，增加新的站点较困难。</p>
+<p>（5）、网状型网络：网状型网络是以上述各种拓扑网络为基础的综合应用。</p>
+<p>4、按通信方式分类： </p>
+<p>（1）、点对点传输网络：数据以点到点的方式在计算机或通信设备中传输，在一对机器之间 通过多条路径连接而成，大的网络大多采用这种方式。</p>
+<p>（2）、广播式传输网络：数据在共用通信介质线路中传输，由网络上的所有机器共享一条通 信信道，适用于地理范围小的小网或保密要求不高的网络。</p>
+<p>5、按网络使用的目的分类： </p>
+<p>（1）、共享资源网：使用者可共享网络中的各种资源。</p>
+<p>（2）、数据处理网：用于处理数据的网络。</p>
+<p>（3）、数据传输网：用来收集、交换、传输数据的网络。</p>
+<p>6、按服务方式分类： </p>
+<p>（1）、客户机 /服务器(C／S)模式：C／S 计算的模式的结构是分散、多层次和具有图形用户 接口的 PC  机作为客户机，不同的操作系统或不同的网络操作系统对应不同的语言和开发工  具，其工作特点是文件从服务器被下载到工作站上，然后在工作站上进行处理，而基于主机 的大型机工作特点是所有处理都发生在主机上。</p>
+<p>（2）、浏览器/服务器(B／S)模式：主要特点是它与软硬件平台的无关性，把应用逻辑和业 务处理规则放在服务器一侧。</p>
+<p>（3）、对等网或称为对等式的网络：对等网可以不要求具备文件服务器，特别是应用在一组 面向用户的 PC  机，每台客户机都可以与其他每台客户机实现”平等”对话操作，共享彼此的  信息资源和硬件资源，组网的计算机一般类型相同，甚至操作系统也相同，这种网络方式灵 活方便，但是较难实现集中管理与控制，安全性也低。</p>
+<p>7、按企业和公司管理分类： </p>
+<p>（1）、内部网：一般指企业内部网，自成一体形成一个独立的网络。</p>
+<p>（2）、内联网：一般指经改造的或新建的企业内部网，采用通用的 TCP／IP 作为通信协议， 一般具备自己的 WWW 服务器和安全防护系统，为企业内部服务，不和因特网直接进行连接。</p>
+<p>（3）、外联网：采用因特网技术，有自己的 WWW 服务器，但不一定与因特网直接进行连接的网络，同时必须建立防火墙把内联网与因特网隔离开，以确保企业内部信息的安全。</p>
+<p>（4）、因特网：因特网是目前最流行的一种国际互联网，在全世界范围内得到应用，结合多 媒体的”声、图、文”表现能力，不仅能处理一般数据和文本，而且也能处理语音、声响、静 止图象、电视图象、动画和三维图形等。</p>
+</blockquote>
+<hr>
+<p>1-09计算机网络中的主干网和本地接入网的主要区别是什么？</p>
+<blockquote>
+<p>主干网的特点：设施共享；高度综合集成，可应付高密度的业务需求量；工作在可控环境；使用率高；技术演进迅速，以软件为主；成本逐渐下降。</p>
+<p>本地接入网特点：设施专用，且分散独立；接入业务种类多，业务量密度低；线路施工难度大，设备运行环境恶劣；使用率低；技术演进迟缓，以硬件为主；网径大小不一，成本与用户有关。</p>
+</blockquote>
+<hr>
+<p>1-10试在下列条件下比较电路交换和分组交换。要传送的报文共x（bit）。从源点到终点共经过k段链路，每段链路的传播时延为d（s），数据率为b（bit/s）。在电路交换时电路的建立时间为s（s）。在分组交换时分组长度为p（bit），且各结点的排队等待时间可忽略不计。问在怎样的条件下，分组交换的时延比电路交换的要小？（提示：画一下草图观察k段链路共有几个结点。）</p>
+<p>发送速率是光速，无法改变</p>
+<p>发送的是整段，转发的是分组。</p>
+<blockquote>
+<p>对电路交换，</p>
+<p>当 t=s 时，链路建立； </p>
+<p>当 t=s+x/C，发送完最后一 bit；</p>
+<p>当 t=s+x/C+kd，所有的信息到达目的地。</p>
+<p>对分组交换，</p>
+<p>当 t=x/C，发送完最后一 bit； </p>
+<p>为到达目的地，最后一个分组需经过 k-1 个分组交换机的转发， 每次转发的时间为 p/C， </p>
+<p>所以总的延迟= x/C+(k-1)p/C+kd  </p>
+<p>所以当分组交换的时延小于电路交换 x/C+(k-1)p/C+kd＜s+x/C+kd 时， (k-1)p/C＜s  </p>
+</blockquote>
+<hr>
+<p>1-11在上题的分组交换网中，设报文长度和分组长度分别为x和（p+h）（bit），其中p为分组的数据部分的长度，而h为每个分组所带的控制信息固定长度，与p的大小无关。通信的两端共经过k段链路。链路的数据率为b（bit/s），但传播时延和结点的排队时间均可忽略不计。若打算使总的时延为最小，问分组的数据部分长度p应取为多大？</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">SanLing</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2020/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%A6%81-%E4%B9%A0%E9%A2%98/">http://example.com/2020/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%A6%81-%E4%B9%A0%E9%A2%98/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">SanLing!</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/sanling-compress.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%A6%81-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机网络-第一章-概要-重要概念</div></div></a></div><div class="next-post pull-right"><a href="/2020/10/20/%E5%9C%B0%E4%B8%AD%E6%B5%B7%E5%8F%B2%E8%AF%97%E4%B8%89%E9%83%A8%E6%9B%B2-%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%A0%A1%E4%B9%8B%E6%88%98-%E5%BA%8F%E5%BA%8F%E8%A8%80/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">地中海史诗三部曲-君士坦丁堡之战-序序言</div></div></a></div></nav></article></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By SanLing</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，欢迎来到SanLing的<a target="_blank" rel="noopener" href="https://sanling.fun/">blog</a>！</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
